@@ -3,9 +3,10 @@
 # pip install torch --index-url https://download.pytorch.org/whl/cu128
 torch>=2.7.0
 vllm>=0.10.0
-trl>=0.19.0
-peft>=0.15.0
-transformers>=4.51.0
+# 以下版本组合已在 CPU 冒烟测试验证（2026-11-11），建议锁定避免 API 漂移
+trl==1.17.1
+peft==0.21.2
+transformers==5.22.2
 accelerate>=1.6.0
 datasets>=3.5.0
 langdetect>=1.0.9
