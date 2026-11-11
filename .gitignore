@@ -1,0 +1,7 @@
+.venv/
+runs/
+results/
+data/*.jsonl
+data/mgsm_eval/
+__pycache__/
+*.pyc

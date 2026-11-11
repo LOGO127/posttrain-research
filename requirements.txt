@@ -1,0 +1,17 @@
+# RTX PRO 5000 Blackwell (sm120) 需要 CUDA 12.8+ 构建的 PyTorch
+# 安装顺序：先装 torch（cu128/cu129 wheel），再装其余
+# pip install torch --index-url https://download.pytorch.org/whl/cu128
+torch>=2.7.0
+vllm>=0.10.0
+trl>=0.19.0
+peft>=0.15.0
+transformers>=4.51.0
+accelerate>=1.6.0
+datasets>=3.5.0
+langdetect>=1.0.9
+openai>=1.60.0
+numpy
+pandas
+tqdm
+matplotlib
+flash-attn; platform_system == "Linux"
